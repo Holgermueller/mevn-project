@@ -10,5 +10,5 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.listen(PORT, () => {
-  console.log("Api server listening on PORT ".underline.green + PORT);
+  console.log(`Api server listening on PORT: + ${PORT}`.green.underline);
 });
