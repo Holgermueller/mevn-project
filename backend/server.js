@@ -14,4 +14,5 @@ app.use(express.urlencoded({ extended: false }));
 
 app.listen(PORT, () => {
   console.log(`Api server listening on PORT: + ${PORT}`.green.underline);
+  console.log(`Remember to add protecton before deploying!!!`.red.underline);
 });
