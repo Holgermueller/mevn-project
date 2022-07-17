@@ -2,7 +2,7 @@
   <div id="Login">
     <v-card class="login-card">
       <v-card-title>
-        <h1>Login</h1>
+        <h1>Login:</h1>
       </v-card-title>
       <v-card-text>
         <v-form ref="form">
@@ -11,7 +11,7 @@
               v-model="email"
               label="Email"
               aria-label="email"
-              prepend-icon="mdi-account-circle"
+              prepend-icon="mdi-email"
             ></v-text-field>
           </v-flex>
 
@@ -48,14 +48,12 @@
 export default {
   name: "LoginPage",
 
-  data() {
-    return {
-      email: "",
-      password: "",
-      error: "",
-      showPassword: false,
-    };
-  },
+  data: () => ({
+    email: "",
+    password: "",
+    error: "",
+    showPassword: false,
+  }),
 
   methods: {
     loginUser() {
